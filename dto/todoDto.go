@@ -1,5 +1,5 @@
 package dto
 
-type TodoCreateResponse struct {
+type TodoResponse struct {
 	Status bool `json:"status"`
 }

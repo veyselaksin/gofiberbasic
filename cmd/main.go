@@ -31,6 +31,9 @@ func main() {
 	// }
 	appRoute.Post("/api/todo", todoHandler.CreateTodo)
 	appRoute.Get("/api/todos", todoHandler.GetAllTodos)
+	appRoute.Get("/api/todo/:id", todoHandler.GetTodoByID)
+	appRoute.Put("/api/todo/:id", todoHandler.UpdateTodo)
+	appRoute.Delete("/api/todo/:id", todoHandler.DeleteTodo)
 
 	appRoute.Listen(":3000")
 }
